@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(216, 125, 13);
+}
+header{
+    background-color: rgb(39, 137, 104);
+    text-align: center;
+    padding: 20px 10;
+}
+hz-logo{ width: 70px;
+    height: auto;
+display: block;
+margin-left: 0;
+margin-right: auto;}
