@@ -1,48 +1,236 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-</head>
-<body>
-    <nav>
-        <a href="index.html">home</a>
-        <a href="profile.html">profile</a>
-        <a
-    href="dashboard.html">dashboard</a>
-         <a href="blog.html">blog</a>
-         <a href="why-it.html">why IT</a>
-         <a href="goals.html">goals</a>
-         <a href="direction.html">direction</a>
-         
-         </nav>
-         <main>
-            <table>
-                <tr>
-                    <th>
-                        Quarter</th>
-                        <th>
-                            course
-                        </th>
-                        <th>
-                            Ec
-                        </th>
-                        <th>
-                            exam
-                        </th>
-                        <th>
-                            Grade
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>1</td>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                </tr>
-            </table>
-         </main>
-    
-</body>
+    <title>Dashboard - My ICT Portfolio</title>
+
+    <meta
+      name="description"
+      content="My first-year ICT dashboard with courses, assessments and study progress at HZ University of Applied Sciences."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>My ICT Portfolio</h1>
+
+      <p class="header-text">HZ University of Applied Sciences</p>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="why-it.html">Why IT</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="blog.html">Blog</a>
+        <a href="goals.html">Goals</a>
+        <a href="direction.html">Direction</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="study-progress">
+        <div class="progress-title">
+          <h2>My Study Progress</h2>
+
+          <p>0 of 60 EC completed</p>
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+
+          <div class="boundary-line"></div>
+        </div>
+
+        <div class="progress-info">
+          <span>0 EC</span>
+
+          <span class="boundary-text">45 EC Study Advice</span>
+
+          <span>60 EC</span>
+        </div>
+      </section>
+
+      <section class="dashboard-table">
+        <h2>Courses & Assessments</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Quarter</th>
+              <th>Course</th>
+              <th>Assessment</th>
+              <th>EC</th>
+              <th>Grade</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="quarter-row">
+              <td colspan="6">Quarter 1 - Intro to Computer Science</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>Q1</td>
+              <td>Programme & Career Orientation</td>
+              <td>Portfolio Website</td>
+              <td>2.5</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>Q1</td>
+              <td>Computer Science Basics</td>
+              <td>Written Knowledge Test</td>
+              <td>5</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>Q1</td>
+              <td>Programming Basics</td>
+              <td>Case Study Exam</td>
+              <td>5</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+
+            <tr class="quarter-row">
+              <td colspan="6">Quarter 2 - Game Development</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>Q2</td>
+              <td>Object Oriented Programming</td>
+              <td>Case Study Exam</td>
+              <td>5</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>Q2</td>
+              <td>Object Oriented Programming</td>
+              <td>Group Assignment</td>
+              <td>5</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+
+            <tr class="quarter-row">
+              <td colspan="6">Quarter 3 - Modern Software Development I</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>Q3</td>
+              <td>Framework Project 1</td>
+              <td>On-site Case Study Exam</td>
+              <td>5</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>Q3</td>
+              <td>Framework Project 1</td>
+              <td>Database Exam</td>
+              <td>1.25</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>Q3</td>
+              <td>Framework Project 1</td>
+              <td>Group Presentation</td>
+              <td>2.5</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>Q3</td>
+              <td>Framework Project 1</td>
+              <td>Group Portfolio</td>
+              <td>1.25</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+
+            <tr class="quarter-row">
+              <td colspan="6">Quarter 4 - Modern Software Development II</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>Q4</td>
+              <td>Framework Project 2</td>
+              <td>Final Delivery</td>
+              <td>2.5</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>Q4</td>
+              <td>Framework Project 2</td>
+              <td>Report of Acceptance Tests</td>
+              <td>2.5</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>Q4</td>
+              <td>Framework Project 2</td>
+              <td>IT Development Portfolio</td>
+              <td>5</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+
+            <tr class="quarter-row">
+              <td colspan="6">Other First Year Courses</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>All Year</td>
+              <td>Personal Professional Development Exploration</td>
+              <td>Criterium Focused Interview</td>
+              <td>12.5</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>Q3 / Q4</td>
+              <td>Business IT Consultancy Basics</td>
+              <td>Video</td>
+              <td>2.5</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+
+            <tr class="not-completed">
+              <td>All Year</td>
+              <td>IT Personality</td>
+              <td>Portfolio</td>
+              <td>2.5</td>
+              <td>-</td>
+              <td>Not completed</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>My ICT Portfolio - HZ University of Applied Sciences</p>
+    </footer>
+  </body>
 </html>

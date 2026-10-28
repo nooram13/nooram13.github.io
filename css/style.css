@@ -1,13 +1,1031 @@
-body{
-    background-color: rgb(216, 125, 13);
+body {
+  background-color: rgb(255, 249, 246);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: rgb(65, 55, 60);
 }
-header{
-    background-color: rgb(39, 137, 104);
-    text-align: center;
-    padding: 20px 10;
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+  background-color: rgb(247, 221, 229);
+  text-align: center;
+  padding-top: 25px;
 }
-hz-logo{ width: 70px;
-    height: auto;
-display: block;
-margin-left: 0;
-margin-right: auto;}
+
+header h1 {
+  color: rgb(92, 45, 70);
+  margin-bottom: 5px;
+  font-size: 32px;
+}
+
+.header-text {
+  color: rgb(140, 85, 110);
+  margin-bottom: 20px;
+}
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+nav {
+  background-color: rgb(92, 45, 70);
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 4px;
+  border-radius: 18px;
+}
+
+nav a:hover {
+  background-color: rgb(190, 105, 145);
+}
+
+nav a:active {
+  background-color: rgb(65, 28, 48);
+}
+
+nav a.active {
+  background-color: rgb(170, 85, 125);
+  font-weight: bold;
+}
+
+/* =========================================
+   MAIN
+   ========================================= */
+
+main {
+  width: 85%;
+  max-width: 1000px;
+  margin: 45px auto;
+}
+
+article,
+section {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   GENERAL
+   ========================================= */
+
+h2,
+h3 {
+  color: rgb(125, 55, 90);
+}
+
+p {
+  line-height: 1.6;
+}
+
+ul {
+  line-height: 1.8;
+}
+
+main a {
+  text-decoration: none;
+}
+
+/* =========================================
+   GENERAL TABLE
+   ========================================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid rgb(225, 200, 210);
+  text-align: left;
+}
+
+table th {
+  background-color: rgb(105, 48, 78);
+  color: white;
+}
+
+table tr:hover {
+  background-color: rgb(250, 228, 238);
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+  background-color: rgb(92, 45, 70);
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 40px;
+}
+
+/* =========================================
+   HOME PAGE
+   ========================================= */
+
+.home-intro {
+  background-color: rgb(255, 241, 246);
+  padding: 40px;
+  border-left: 8px solid rgb(180, 100, 135);
+  border-radius: 5px 25px 5px 25px;
+  margin-bottom: 55px;
+}
+
+.intro-text {
+  width: 55%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.intro-text h2 {
+  font-size: 34px;
+  color: rgb(95, 40, 68);
+  margin-top: 5px;
+}
+
+.intro-text p {
+  line-height: 1.7;
+}
+
+.intro-photo {
+  width: 32%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 7%;
+}
+
+.code-photo {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid rgb(220, 200, 205);
+  border-radius: 8px;
+  transform: rotate(3deg);
+}
+
+.intro-photo p {
+  color: rgb(130, 90, 105);
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.home-button {
+  display: inline-block;
+  background-color: rgb(150, 70, 108);
+  color: white;
+  padding: 11px 22px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.home-button:hover {
+  background-color: rgb(92, 45, 70);
+  color: white;
+}
+
+/* HOME PORTFOLIO */
+
+.explore-section {
+  margin-bottom: 55px;
+  padding-left: 20px;
+}
+
+.explore-section h2 {
+  color: rgb(95, 40, 68);
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.explore-text {
+  color: rgb(115, 95, 105);
+}
+
+.portfolio-menu {
+  margin-top: 25px;
+}
+
+.portfolio-item {
+  width: 26%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  margin: 8px;
+  padding: 18px;
+  border-top: 5px solid rgb(190, 105, 145);
+  border-radius: 4px 4px 16px 16px;
+  color: rgb(95, 40, 68);
+}
+
+.portfolio-item strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.portfolio-item span {
+  display: block;
+  color: rgb(125, 105, 115);
+  font-size: 14px;
+}
+
+.portfolio-item:hover {
+  background-color: rgb(250, 224, 235);
+  border-top-color: rgb(92, 45, 70);
+}
+
+/* HOME INTERESTS */
+
+.interest-section {
+  background-color: rgb(248, 228, 236);
+  padding: 30px;
+  border-radius: 20px 5px 20px 5px;
+  margin-bottom: 50px;
+}
+
+.interest-section h2 {
+  color: rgb(95, 40, 68);
+}
+
+/* HZ LOGO */
+
+.hz-section {
+  text-align: center;
+  border-top: 2px solid rgb(225, 185, 200);
+  padding-top: 30px;
+}
+
+.hz-logo {
+  width: 130px;
+  margin-bottom: 5px;
+}
+
+.hz-section p {
+  color: rgb(130, 85, 105);
+}
+
+/* =========================================
+   PROFILE PAGE
+   ========================================= */
+
+.profile-top {
+  background-color: rgb(255, 239, 246);
+  padding: 35px;
+  border-left: 8px solid rgb(180, 100, 135);
+  border-radius: 5px 25px 5px 25px;
+  margin-bottom: 45px;
+}
+
+.about-me {
+  width: 55%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.about-me h2 {
+  color: rgb(95, 40, 68);
+  font-size: 32px;
+  margin-top: 5px;
+}
+
+.hello-text {
+  color: rgb(185, 90, 135);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.tagline {
+  color: rgb(150, 70, 110);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* PROFILE PHOTO */
+
+.photo-area {
+  width: 34%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6%;
+  text-align: center;
+}
+
+.photo-card {
+  background-color: white;
+  padding: 12px;
+  border: 1px solid rgb(225, 200, 210);
+  transform: rotate(2deg);
+}
+
+.profile-photo {
+  width: 100%;
+  border: none;
+}
+
+.photo-card p {
+  color: rgb(135, 90, 110);
+  font-size: 13px;
+}
+
+/* GITHUB BUTTON */
+
+.github-button {
+  display: inline-block;
+  background-color: rgb(150, 70, 108);
+  color: white;
+  padding: 10px 22px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.github-button:hover {
+  background-color: rgb(92, 45, 70);
+  color: white;
+}
+
+/* QUICK FACTS */
+
+.quick-facts {
+  margin-bottom: 45px;
+}
+
+.quick-facts h2 {
+  text-align: center;
+  color: rgb(95, 40, 68);
+}
+
+.fact {
+  width: 26%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  margin: 8px;
+  padding: 18px;
+  text-align: center;
+  border-bottom: 4px solid rgb(195, 105, 145);
+  border-radius: 15px;
+}
+
+.fact strong {
+  color: rgb(105, 45, 75);
+}
+
+.fact p {
+  color: rgb(125, 105, 115);
+}
+
+.fact:hover {
+  background-color: rgb(250, 225, 236);
+}
+
+/* LIKES */
+
+.likes-section {
+  background-color: rgb(250, 230, 239);
+  padding: 30px;
+  border-radius: 20px 5px 20px 5px;
+  margin-bottom: 45px;
+}
+
+.likes-section li {
+  margin: 8px 0;
+}
+
+/* USEFUL LINKS */
+
+.useful-links {
+  background-color: rgb(255, 246, 250);
+  padding: 30px;
+  border-radius: 5px 20px 5px 20px;
+}
+
+.useful-links a {
+  display: block;
+  background-color: white;
+  color: rgb(105, 45, 75);
+  padding: 12px;
+  margin: 9px 0;
+  border-left: 5px solid rgb(185, 95, 135);
+  border-radius: 5px;
+}
+
+.useful-links a:hover {
+  background-color: rgb(215, 145, 175);
+  color: white;
+}
+
+/* =========================================
+   WHY IT PAGE
+   ========================================= */
+
+.why-intro {
+  background-color: rgb(255, 239, 246);
+  padding: 35px;
+  border-left: 8px solid rgb(180, 100, 135);
+  border-radius: 5px 25px 5px 25px;
+  margin-bottom: 35px;
+}
+
+.why-intro h2 {
+  font-size: 32px;
+  color: rgb(95, 40, 68);
+}
+
+.why-small {
+  color: rgb(185, 90, 135);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.why-box {
+  width: 42%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  padding: 25px;
+  margin-right: 3%;
+  border-top: 5px solid rgb(190, 105, 145);
+  border-radius: 5px 5px 18px 18px;
+}
+
+.second-box {
+  background-color: rgb(250, 230, 239);
+}
+
+.why-goal {
+  background-color: rgb(248, 228, 236);
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 20px 5px 20px 5px;
+  text-align: center;
+}
+
+.why-button {
+  display: inline-block;
+  background-color: rgb(150, 70, 108);
+  color: white;
+  padding: 11px 22px;
+  border-radius: 20px;
+}
+
+.why-button:hover {
+  background-color: rgb(92, 45, 70);
+  color: white;
+}
+
+/* =========================================
+   BLOG PAGE
+   ========================================= */
+
+.personal-blog-intro {
+  background-color: rgb(255, 238, 246);
+  padding: 40px;
+  margin-bottom: 45px;
+  border-left: 8px solid rgb(165, 75, 120);
+  border-radius: 5px 25px 5px 25px;
+}
+
+.personal-blog-intro h2 {
+  color: rgb(95, 40, 68);
+  font-size: 32px;
+}
+
+.blog-note {
+  color: rgb(180, 90, 135);
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.blog-quote {
+  background-color: white;
+  color: rgb(130, 60, 95);
+  padding: 15px;
+  border-left: 4px solid rgb(195, 105, 145);
+  font-style: italic;
+}
+
+.personal-post {
+  width: 78%;
+  background-color: white;
+  padding: 28px;
+  margin: 28px auto;
+  border-left: 6px solid rgb(190, 105, 145);
+  border-radius: 5px 20px 5px 20px;
+}
+
+.personal-post:hover {
+  background-color: rgb(255, 246, 250);
+}
+
+.soft-post {
+  background-color: rgb(250, 230, 239);
+}
+
+.cyber-post {
+  background-color: rgb(247, 222, 235);
+  border-left: 8px solid rgb(95, 40, 68);
+}
+
+.post-label {
+  color: rgb(180, 90, 130);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.blog-button {
+  display: inline-block;
+  background-color: rgb(150, 70, 108);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 18px;
+}
+
+.blog-button:hover {
+  background-color: rgb(92, 45, 70);
+  color: white;
+}
+
+.blog-ending {
+  width: 70%;
+  background-color: rgb(255, 244, 249);
+  text-align: center;
+  padding: 30px;
+  margin: 50px auto 20px auto;
+  border-top: 3px solid rgb(190, 105, 145);
+  border-bottom: 3px solid rgb(190, 105, 145);
+}
+
+/* =========================================
+   GOALS PAGE
+   ========================================= */
+
+.goals-intro {
+  background-color: rgb(255, 239, 246);
+  padding: 35px;
+  border-left: 8px solid rgb(180, 100, 135);
+  border-radius: 5px 25px 5px 25px;
+  margin-bottom: 40px;
+}
+
+.goals-intro h2 {
+  font-size: 32px;
+  color: rgb(95, 40, 68);
+}
+
+.swot-section {
+  margin-bottom: 45px;
+}
+
+.swot-section h2 {
+  text-align: center;
+}
+
+.swot-box {
+  width: 42%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  margin: 10px;
+  padding: 22px;
+  border-radius: 12px;
+}
+
+.strength {
+  border-top: 5px solid rgb(180, 100, 135);
+}
+
+.weakness {
+  background-color: rgb(250, 230, 239);
+  border-top: 5px solid rgb(130, 60, 95);
+}
+
+.opportunity {
+  background-color: rgb(255, 246, 250);
+  border-top: 5px solid rgb(205, 135, 165);
+}
+
+.threat {
+  background-color: rgb(248, 226, 236);
+  border-top: 5px solid rgb(95, 40, 68);
+}
+
+.future-goal {
+  background-color: rgb(250, 230, 239);
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px 5px 20px 5px;
+}
+
+/* =========================================
+   DIRECTION PAGE
+   ========================================= */
+
+.direction-intro {
+  background-color: rgb(255, 239, 246);
+  padding: 35px;
+  border-left: 8px solid rgb(180, 100, 135);
+  border-radius: 5px 25px 5px 25px;
+  margin-bottom: 35px;
+}
+
+.direction-intro h2 {
+  font-size: 32px;
+  color: rgb(95, 40, 68);
+}
+
+.direction-card {
+  width: 80%;
+  background-color: white;
+  padding: 25px;
+  margin: 25px auto;
+  border-left: 6px solid rgb(190, 105, 145);
+  border-radius: 5px 18px 5px 18px;
+}
+
+.direction-card:hover {
+  background-color: rgb(255, 246, 250);
+}
+
+.pink-direction {
+  background-color: rgb(250, 230, 239);
+  border-left-color: rgb(110, 45, 75);
+}
+
+.direction-end {
+  background-color: rgb(248, 228, 236);
+  padding: 30px;
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 20px 5px 20px 5px;
+}
+
+/* =========================================
+   PROGRAMMING EXPERIENCE
+   ========================================= */
+
+.programming-intro {
+  background-color: rgb(255, 239, 246);
+  padding: 35px;
+  border-left: 8px solid rgb(180, 100, 135);
+  border-radius: 5px 25px 5px 25px;
+  margin-bottom: 40px;
+}
+
+.programming-intro h2 {
+  font-size: 32px;
+}
+
+.learning-section {
+  margin-bottom: 45px;
+}
+
+.learning-section h2 {
+  text-align: center;
+}
+
+.learning-box {
+  width: 26%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  padding: 20px;
+  margin: 8px;
+  border-top: 5px solid rgb(190, 105, 145);
+  border-radius: 5px 5px 15px 15px;
+}
+
+.learning-box:hover {
+  background-color: rgb(250, 225, 236);
+}
+
+.challenge-section {
+  background-color: rgb(250, 230, 239);
+  padding: 30px;
+  border-radius: 20px 5px 20px 5px;
+  margin-bottom: 40px;
+}
+
+.programming-goal {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  border-top: 5px solid rgb(185, 95, 135);
+  border-radius: 5px 5px 18px 18px;
+}
+
+/* =========================================
+   ICT FIELD PAGE
+   ========================================= */
+
+.field-intro {
+  background-color: rgb(255, 239, 246);
+  padding: 35px;
+  border-left: 8px solid rgb(180, 100, 135);
+  border-radius: 5px 25px 5px 25px;
+  margin-bottom: 40px;
+}
+
+.field-intro h2 {
+  font-size: 32px;
+}
+
+.field-section {
+  margin-bottom: 45px;
+}
+
+.field-section h2 {
+  text-align: center;
+}
+
+.field-box {
+  width: 42%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  padding: 22px;
+  margin: 10px;
+  border-top: 5px solid rgb(190, 105, 145);
+  border-radius: 5px 5px 15px 15px;
+}
+
+.field-box:hover {
+  background-color: rgb(250, 225, 236);
+}
+
+.cyber-interest {
+  background-color: rgb(250, 230, 239);
+  padding: 30px;
+  border-left: 7px solid rgb(105, 45, 75);
+  border-radius: 20px 5px 20px 5px;
+  margin-bottom: 40px;
+}
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+
+.back-button {
+  display: inline-block;
+  background-color: rgb(150, 70, 108);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.back-button:hover {
+  background-color: rgb(92, 45, 70);
+  color: white;
+}
+
+/* =========================================
+   DASHBOARD PAGE
+   ========================================= */
+
+/* STUDY PROGRESS */
+
+.study-progress {
+  width: 80%;
+  background-color: rgb(255, 239, 246);
+  padding: 30px;
+  margin: 0 auto 45px auto;
+  border-left: 8px solid rgb(180, 100, 135);
+  border-radius: 5px 25px 5px 25px;
+}
+
+/* PROGRESS TITLE */
+
+.progress-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.progress-title h2 {
+  color: rgb(95, 40, 68);
+  margin: 0 0 6px 0;
+  font-size: 28px;
+}
+
+.progress-title p {
+  color: rgb(150, 80, 110);
+  margin: 0;
+  font-size: 14px;
+}
+
+/* PROGRESS BAR */
+
+.progress-bar {
+  width: 100%;
+  height: 24px;
+  background-color: rgb(230, 215, 222);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background-color: rgb(180, 100, 135);
+  border-radius: 15px;
+}
+
+/* STUDY ADVICE BOUNDARY */
+
+.boundary-line {
+  position: absolute;
+  left: 75%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: rgb(92, 45, 70);
+}
+
+/* PROGRESS TEXT */
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9px;
+  color: rgb(120, 85, 100);
+  font-size: 12px;
+}
+
+.boundary-text {
+  color: rgb(92, 45, 70);
+  font-weight: bold;
+}
+
+/* DASHBOARD TABLE */
+
+.dashboard-table {
+  background-color: white;
+  padding: 30px;
+  border-top: 5px solid rgb(190, 105, 145);
+  border-radius: 5px 5px 18px 18px;
+  margin-bottom: 40px;
+}
+
+.dashboard-table h2 {
+  text-align: center;
+  color: rgb(95, 40, 68);
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.dashboard-table table {
+  font-size: 14px;
+}
+
+.dashboard-table th {
+  background-color: rgb(95, 40, 68);
+  color: white;
+}
+
+.quarter-row td {
+  background-color: rgb(232, 190, 210);
+  color: rgb(85, 35, 60);
+  font-weight: bold;
+  text-align: center;
+}
+
+.not-completed td {
+  background-color: rgb(255, 251, 252);
+}
+
+.not-completed:hover td {
+  background-color: rgb(250, 235, 242);
+}
+
+.passed td {
+  background-color: rgb(230, 245, 233);
+}
+
+.failed td {
+  background-color: rgb(250, 228, 232);
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+  main {
+    width: 92%;
+  }
+
+  nav a {
+    padding: 8px 12px;
+  }
+
+  /* HOME */
+
+  .intro-text {
+    width: 100%;
+  }
+
+  .intro-photo {
+    width: 70%;
+    margin: 30px 15% 0 15%;
+  }
+
+  .portfolio-item {
+    width: 85%;
+  }
+
+  /* PROFILE */
+
+  .about-me {
+    width: 100%;
+  }
+
+  .photo-area {
+    width: 70%;
+    margin: 30px 15% 0 15%;
+  }
+
+  .fact {
+    width: 85%;
+  }
+
+  /* WHY IT */
+
+  .why-box {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  /* BLOG */
+
+  .personal-post {
+    width: 90%;
+  }
+
+  .blog-ending {
+    width: 85%;
+  }
+
+  /* GOALS */
+
+  .swot-box {
+    width: 90%;
+  }
+
+  /* DIRECTION */
+
+  .direction-card {
+    width: 90%;
+  }
+
+  /* PROGRAMMING */
+
+  .learning-box {
+    width: 85%;
+  }
+
+  /* ICT FIELD */
+
+  .field-box {
+    width: 90%;
+  }
+
+  /* DASHBOARD */
+
+  .study-progress {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .progress-title h2 {
+    font-size: 24px;
+  }
+
+  .progress-info {
+    font-size: 10px;
+  }
+
+  .dashboard-table {
+    overflow-x: auto;
+    padding: 15px;
+  }
+
+  .dashboard-table table {
+    min-width: 750px;
+  }
+}

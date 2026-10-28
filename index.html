@@ -1,52 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <title>Home - My ICT Portfolio</title>
 
-<body>
+    <meta
+      name="description"
+      content="My ICT portfolio about my interests, motivation and study journey at HZ University of Applied Sciences."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
     <header>
-    <h1>Home Page</h1>
-    <nav>
-        <a href="index.html">home</a>
-        <a href="profile.html">profile</a>
-        <a
-    href="dashboard.html">dashboard</a>
-         <a href="blog.html">blog</a>
-         <a href="why-it.html">why IT</a>
-         <a href="goals.html">goals</a>
-         <a href="direction.html">direction</a>
-         
-         </nav>
-        </header>
-    <main>
-      
-    
-    <p>
-        welcome to my website
-    </p>
-    <table>
-        <tr>
-            <th>Interest</th>
-            <th>Why</th>
-        </tr>
-    
-        <tr>
-            <td>Technology</td>
-            <td>I like learning how computers work</td>
-        </tr>
-    
-        <tr>
-            <td>Programming</td>
-            <td>I want to build useful software</td>
-        </tr>
-    </table>
-    < a href="profile.html"> Go to profile</a>
-    <img src='images/hz-university-of-applied-sciences-logo.png" alt="HZ UNIVERSITY LOGO">
-    </main>
-</body>
+      <h1>My ICT Portfolio</h1>
 
+      <p class="header-text">HZ University of Applied Sciences</p>
+
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="why-it.html">Why IT</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="blog.html">Blog</a>
+        <a href="goals.html">Goals</a>
+        <a href="direction.html">Direction</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home-intro">
+        <div class="intro-text">
+          <h2>Welcome</h2>
+
+          <p>
+            Welcome to my ICT portfolio. This website shows who I am, why I
+            chose ICT and what I am learning during my studies at HZ University
+            of Applied Sciences.
+          </p>
+
+          <p>
+            I enjoy learning new things and discovering how technology works.
+            During my studies I want to explore different areas of ICT and find
+            the direction that fits me best.
+          </p>
+
+          <a href="profile.html" class="home-button"> About Me </a>
+        </div>
+
+        <div class="intro-photo">
+          <img
+            src="images/computer.png"
+            alt="Computer and programming"
+            class="code-photo"
+          />
+
+          <p>learning • creating • improving</p>
+        </div>
+      </section>
+
+      <section class="explore-section">
+        <h2>Explore My Portfolio</h2>
+
+        <p class="explore-text">
+          These pages show different parts of my ICT journey.
+        </p>
+
+        <div class="portfolio-menu">
+          <a href="profile.html" class="portfolio-item">
+            <strong>Profile</strong>
+            <span>Learn more about me.</span>
+          </a>
+
+          <a href="why-it.html" class="portfolio-item">
+            <strong>Why IT</strong>
+            <span>Why I chose ICT.</span>
+          </a>
+
+          <a href="dashboard.html" class="portfolio-item">
+            <strong>Dashboard</strong>
+            <span>My first-year study progress.</span>
+          </a>
+
+          <a href="blog.html" class="portfolio-item">
+            <strong>Blog</strong>
+            <span>My experiences and thoughts.</span>
+          </a>
+
+          <a href="goals.html" class="portfolio-item">
+            <strong>Goals</strong>
+            <span>My goals and SWOT analysis.</span>
+          </a>
+
+          <a href="direction.html" class="portfolio-item">
+            <strong>Direction</strong>
+            <span>Where I see myself in the future.</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="interest-section">
+        <h2>My Interests</h2>
+
+        <table>
+          <tr>
+            <th>Interest</th>
+            <th>Why I Like It</th>
+          </tr>
+
+          <tr>
+            <td>Technology</td>
+            <td>I like understanding how things work.</td>
+          </tr>
+
+          <tr>
+            <td>Cybersecurity</td>
+            <td>I enjoy solving problems and investigating systems.</td>
+          </tr>
+
+          <tr>
+            <td>Programming</td>
+            <td>I like learning how ideas can become working programs.</td>
+          </tr>
+
+          <tr>
+            <td>Music</td>
+            <td>I enjoy playing the drums.</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="hz-section">
+        <img
+          src="images/hz.png"
+          alt="HZ University of Applied Sciences logo"
+          class="hz-logo"
+        />
+
+        <p>ICT student at HZ University of Applied Sciences</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>My ICT Portfolio - HZ University of Applied Sciences</p>
+    </footer>
+  </body>
 </html>
