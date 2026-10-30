@@ -1,430 +1,526 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
 
-    <title>Dashboard - My ICT Portfolio</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-    <meta
-      name="description"
-      content="My first-year ICT study progress, courses, assessments and credits at HZ University of Applied Sciences."
-    />
+  <title>Dashboard - My ICT Portfolio</title>
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <meta
+    name="description"
+    content="My first-year ICT study progress, courses, assessments and credits at HZ University of Applied Sciences."
+  >
 
-  <body>
-    <header>
-      <h1>My ICT Portfolio</h1>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-      <p class="header-text">HZ University of Applied Sciences</p>
+<body>
 
-      <nav>
-        <a href="index.html"> Home </a>
+  <header>
 
-        <a href="profile.html"> Profile </a>
+    <h1>My ICT Portfolio</h1>
 
-        <a href="why-it.html"> Why IT </a>
+    <p class="header-text">
+      HZ University of Applied Sciences
+    </p>
 
-        <a href="dashboard.html" class="active" aria-current="page">
-          Dashboard
-        </a>
+    <nav>
 
-        <a href="blog.html"> Blog </a>
+      <a href="index.html">
+        Home
+      </a>
 
-        <a href="goals.html"> Goals </a>
+      <a href="about.html">
+        About
+      </a>
 
-        <a href="direction.html"> Direction </a>
-      </nav>
-    </header>
+      <a href="why-it.html">
+        Why IT
+      </a>
 
-    <main>
-      <!-- =========================================
-         INTRODUCTION
-         ========================================= -->
+      <a
+        href="dashboard.html"
+        class="active"
+        aria-current="page"
+      >
+        Dashboard
+      </a>
 
-      <section class="dashboard-intro">
-        <p class="dashboard-small">MY FIRST YEAR ♡</p>
+      <a href="blog.html">
+        Blog
+      </a>
 
-        <h2>Study Dashboard</h2>
+      <a href="goals.html">
+        Goals
+      </a>
+
+      <a href="direction.html">
+        Direction
+      </a>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <section class="dashboard-intro">
+
+      <p class="dashboard-small">
+        MY FIRST YEAR ♡
+      </p>
+
+      <h2>
+        Study Dashboard
+      </h2>
+
+      <p>
+        This dashboard gives an overview of my first year in the ICT
+        programme at HZ University of Applied Sciences.
+      </p>
+
+      <p>
+        It shows my courses, assessments, study credits and current
+        study progress. I can update the grades and status during the
+        year when I receive my results.
+      </p>
+
+    </section>
+
+
+    <section class="study-progress">
+
+      <div class="progress-title">
+
+        <h2>
+          My Study Progress
+        </h2>
 
         <p>
-          This dashboard gives an overview of my first year in the ICT programme
-          at HZ University of Applied Sciences.
+          0 of 60 EC completed
         </p>
 
-        <p>
-          It shows my courses, assessments, study credits and current study
-          progress. I can update the grades and status during the year when I
-          receive my results.
-        </p>
-      </section>
+      </div>
 
-      <!-- =========================================
-         STUDY PROGRESS
-         ========================================= -->
 
-      <section class="study-progress">
-        <div class="progress-title">
-          <h2>My Study Progress</h2>
+      <div class="progress-bar">
 
-          <p>0 of 60 EC completed</p>
-        </div>
+        <div class="progress-fill"></div>
 
-        <div class="progress-bar">
-          <div class="progress-fill"></div>
+        <div class="boundary-line"></div>
 
-          <div class="boundary-line"></div>
-        </div>
+      </div>
 
-        <div class="progress-info">
-          <span> 0 EC </span>
 
-          <span class="boundary-text"> 45 EC Study Advice boundary </span>
+      <div class="progress-info">
 
-          <span> 60 EC </span>
-        </div>
-      </section>
+        <span>
+          0 EC
+        </span>
 
-      <!-- =========================================
-         STATUS LEGEND
-         ========================================= -->
+        <span class="boundary-text">
+          45 EC Study Advice boundary
+        </span>
 
-      <section class="dashboard-status">
-        <h2>Assessment Status</h2>
+        <span>
+          60 EC
+        </span>
 
-        <p>The colours below show the current status of each assessment.</p>
+      </div>
 
-        <div class="status-list">
-          <span class="status-item status-not-completed"> Not completed </span>
+    </section>
 
-          <span class="status-item status-passed"> Passed </span>
 
-          <span class="status-item status-failed"> Insufficient </span>
-        </div>
-      </section>
+    <section class="dashboard-status">
 
-      <!-- =========================================
-         COURSES AND ASSESSMENTS
-         ========================================= -->
+      <h2>
+        Assessment Status
+      </h2>
 
-      <section class="dashboard-table">
-        <h2>Courses & Assessments</h2>
+      <p>
+        The colours below show the current status of each assessment.
+      </p>
 
-        <table>
-          <thead>
-            <tr>
-              <th>Quartile / Block</th>
+      <div class="status-list">
 
-              <th>Course</th>
+        <span class="status-item status-not-completed">
+          Not completed
+        </span>
 
-              <th>Assessment</th>
+        <span class="status-item status-passed">
+          Passed
+        </span>
 
-              <th>EC</th>
+        <span class="status-item status-failed">
+          Insufficient
+        </span>
 
-              <th>Grade</th>
+      </div>
 
-              <th>Status</th>
-            </tr>
-          </thead>
+    </section>
 
-          <tbody>
-            <!-- =====================================
-               QUARTILE 1 / BLOCK 1
-               ===================================== -->
 
-            <tr class="quarter-row">
-              <td colspan="6">
-                Quartile 1 / Block 1 - Introduction to computer science
-              </td>
-            </tr>
+    <section class="dashboard-table">
 
-            <!-- PCO -->
+      <h2>
+        Courses & Assessments
+      </h2>
 
-            <tr class="not-completed">
-              <td>1</td>
+      <table>
 
-              <td>
-                Programme- & Career Orientation
+        <thead>
 
-                <span class="course-code"> CU75101V1 </span>
-              </td>
+          <tr>
+            <th>Quartile / Block</th>
+            <th>Course</th>
+            <th>Assessment</th>
+            <th>EC</th>
+            <th>Grade</th>
+            <th>Status</th>
+          </tr>
 
-              <td>Assignment</td>
+        </thead>
 
-              <td>5</td>
 
-              <td>-</td>
+        <tbody>
 
-              <td>Not completed</td>
-            </tr>
+          <tr class="quarter-row">
+            <td colspan="6">
+              Quartile 1 / Block 1 -
+              Introduction to computer science
+            </td>
+          </tr>
 
-            <!-- PROGRAMMING BASICS -->
 
-            <tr class="not-completed">
-              <td>1</td>
+          <tr class="not-completed">
 
-              <td>
-                Programming Basics
+            <td>1</td>
 
-                <span class="course-code"> CU75102V1 </span>
-              </td>
+            <td>
+              Programme- & Career Orientation
+              <span class="course-code">
+                CU75101V1
+              </span>
+            </td>
 
-              <td>Assignment</td>
+            <td>Assignment</td>
 
-              <td>5</td>
+            <td>5</td>
 
-              <td>-</td>
+            <td>-</td>
 
-              <td>Not completed</td>
-            </tr>
+            <td>Not completed</td>
 
-            <!-- COMPUTER SCIENCE BASICS -->
+          </tr>
 
-            <tr class="not-completed">
-              <td>1</td>
 
-              <td>
-                Computer Science Basics
+          <tr class="not-completed">
 
-                <span class="course-code"> CU75103V1 </span>
-              </td>
+            <td>1</td>
 
-              <td>Written Knowledge Test</td>
+            <td>
+              Programming Basics
+              <span class="course-code">
+                CU75102V1
+              </span>
+            </td>
 
-              <td>5</td>
+            <td>Assignment</td>
 
-              <td>-</td>
+            <td>5</td>
 
-              <td>Not completed</td>
-            </tr>
+            <td>-</td>
 
-            <!-- =====================================
-               QUARTILE 2 / BLOCK 2
-               ===================================== -->
+            <td>Not completed</td>
 
-            <tr class="quarter-row">
-              <td colspan="6">Quartile 2 / Block 2 - Game development</td>
-            </tr>
+          </tr>
 
-            <!-- OBJECT ORIENTED PROGRAMMING -->
 
-            <tr class="not-completed">
-              <td>2</td>
+          <tr class="not-completed">
 
-              <td>
-                Object Oriented Programming
+            <td>1</td>
 
-                <span class="course-code"> CU75104V1 </span>
-              </td>
+            <td>
+              Computer Science Basics
+              <span class="course-code">
+                CU75103V1
+              </span>
+            </td>
 
-              <td>Assignment</td>
+            <td>Written Knowledge Test</td>
 
-              <td>5</td>
+            <td>5</td>
 
-              <td>-</td>
+            <td>-</td>
 
-              <td>Not completed</td>
-            </tr>
+            <td>Not completed</td>
 
-            <!-- AGILE -->
+          </tr>
 
-            <tr class="not-completed">
-              <td>2</td>
 
-              <td>
-                Agile and Team Management
+          <tr class="quarter-row">
+            <td colspan="6">
+              Quartile 2 / Block 2 -
+              Game development
+            </td>
+          </tr>
 
-                <span class="course-code"> CU75105V1 </span>
-              </td>
 
-              <td>Assignment</td>
+          <tr class="not-completed">
 
-              <td>5</td>
+            <td>2</td>
 
-              <td>-</td>
+            <td>
+              Object Oriented Programming
+              <span class="course-code">
+                CU75104V1
+              </span>
+            </td>
 
-              <td>Not completed</td>
-            </tr>
+            <td>Assignment</td>
 
-            <!-- PROJECT FOUNDATIONS -->
+            <td>5</td>
 
-            <tr class="not-completed">
-              <td>2</td>
+            <td>-</td>
 
-              <td>
-                Project: Foundations
+            <td>Not completed</td>
 
-                <span class="course-code"> CU75106V1 </span>
-              </td>
+          </tr>
 
-              <td>Portfolio</td>
 
-              <td>5</td>
+          <tr class="not-completed">
 
-              <td>-</td>
+            <td>2</td>
 
-              <td>Not completed</td>
-            </tr>
+            <td>
+              Agile and Team Management
+              <span class="course-code">
+                CU75105V1
+              </span>
+            </td>
 
-            <!-- =====================================
-               QUARTILE 3 / BLOCK 3
-               ===================================== -->
+            <td>Assignment</td>
 
-            <tr class="quarter-row">
-              <td colspan="6">
-                Quartile 3 / Block 3 - Modern software development 1
-              </td>
-            </tr>
+            <td>5</td>
 
-            <!-- SOFTWARE ENGINEERING BASICS -->
+            <td>-</td>
 
-            <tr class="not-completed">
-              <td>3</td>
+            <td>Not completed</td>
 
-              <td>
-                Software Engineering Basics
+          </tr>
 
-                <span class="course-code"> CU75107V1 </span>
-              </td>
 
-              <td>Assignment</td>
+          <tr class="not-completed">
 
-              <td>5</td>
+            <td>2</td>
 
-              <td>-</td>
+            <td>
+              Project: Foundations
+              <span class="course-code">
+                CU75106V1
+              </span>
+            </td>
 
-              <td>Not completed</td>
-            </tr>
+            <td>Portfolio</td>
 
-            <!-- FOUNDATIONS OF DATA -->
+            <td>5</td>
 
-            <tr class="not-completed">
-              <td>3</td>
+            <td>-</td>
 
-              <td>
-                Foundations of Data
+            <td>Not completed</td>
 
-                <span class="course-code"> CU75108V1 </span>
-              </td>
+          </tr>
 
-              <td>Assignment</td>
 
-              <td>5</td>
+          <tr class="quarter-row">
+            <td colspan="6">
+              Quartile 3 / Block 3 -
+              Modern software development 1
+            </td>
+          </tr>
 
-              <td>-</td>
 
-              <td>Not completed</td>
-            </tr>
+          <tr class="not-completed">
 
-            <!-- REQUIREMENTS MODELLING -->
+            <td>3</td>
 
-            <tr class="not-completed">
-              <td>3</td>
+            <td>
+              Software Engineering Basics
+              <span class="course-code">
+                CU75107V1
+              </span>
+            </td>
 
-              <td>
-                Requirements Modelling
+            <td>Assignment</td>
 
-                <span class="course-code"> CU75109V1 </span>
-              </td>
+            <td>5</td>
 
-              <td>Assignment</td>
+            <td>-</td>
 
-              <td>5</td>
+            <td>Not completed</td>
 
-              <td>-</td>
+          </tr>
 
-              <td>Not completed</td>
-            </tr>
 
-            <!-- =====================================
-               QUARTILE 4 / BLOCK 4
-               ===================================== -->
+          <tr class="not-completed">
 
-            <tr class="quarter-row">
-              <td colspan="6">
-                Quartile 4 / Block 4 - Modern software development 2
-              </td>
-            </tr>
+            <td>3</td>
 
-            <!-- WEB APPLICATION DEVELOPMENT -->
+            <td>
+              Foundations of Data
+              <span class="course-code">
+                CU75108V1
+              </span>
+            </td>
 
-            <tr class="not-completed">
-              <td>4</td>
+            <td>Assignment</td>
 
-              <td>
-                Web Application Development
+            <td>5</td>
 
-                <span class="course-code"> CU75110V1 </span>
-              </td>
+            <td>-</td>
 
-              <td>Assignment</td>
+            <td>Not completed</td>
 
-              <td>5</td>
+          </tr>
 
-              <td>-</td>
 
-              <td>Not completed</td>
-            </tr>
+          <tr class="not-completed">
 
-            <!-- DATA SCIENCE -->
+            <td>3</td>
 
-            <tr class="not-completed">
-              <td>4</td>
+            <td>
+              Requirements Modelling
+              <span class="course-code">
+                CU75109V1
+              </span>
+            </td>
 
-              <td>
-                Data Science Basics
+            <td>Assignment</td>
 
-                <span class="course-code"> CU75111V1 </span>
-              </td>
+            <td>5</td>
 
-              <td>Assignment</td>
+            <td>-</td>
 
-              <td>5</td>
+            <td>Not completed</td>
 
-              <td>-</td>
+          </tr>
 
-              <td>Not completed</td>
-            </tr>
 
-            <!-- PROJECT APPLIED CLIENT SOLUTIONS -->
+          <tr class="quarter-row">
+            <td colspan="6">
+              Quartile 4 / Block 4 -
+              Modern software development 2
+            </td>
+          </tr>
 
-            <tr class="not-completed">
-              <td>4</td>
 
-              <td>
-                Project: Applied Client Solutions
+          <tr class="not-completed">
 
-                <span class="course-code"> CU75112V1 </span>
-              </td>
+            <td>4</td>
 
-              <td>Portfolio</td>
+            <td>
+              Web Application Development
+              <span class="course-code">
+                CU75110V1
+              </span>
+            </td>
 
-              <td>5</td>
+            <td>Assignment</td>
 
-              <td>-</td>
+            <td>5</td>
 
-              <td>Not completed</td>
-            </tr>
-          </tbody>
+            <td>-</td>
 
-          <tfoot>
-            <tr class="total-row">
-              <td colspan="3">Total First-Year Credits</td>
+            <td>Not completed</td>
 
-              <td>60 EC</td>
+          </tr>
 
-              <td colspan="2">0 EC completed</td>
-            </tr>
-          </tfoot>
-        </table>
-      </section>
-    </main>
 
-    <footer>
-      <p>My ICT Portfolio - HZ University of Applied Sciences</p>
-    </footer>
-  </body>
+          <tr class="not-completed">
+
+            <td>4</td>
+
+            <td>
+              Data Science Basics
+              <span class="course-code">
+                CU75111V1
+              </span>
+            </td>
+
+            <td>Assignment</td>
+
+            <td>5</td>
+
+            <td>-</td>
+
+            <td>Not completed</td>
+
+          </tr>
+
+
+          <tr class="not-completed">
+
+            <td>4</td>
+
+            <td>
+              Project: Applied Client Solutions
+              <span class="course-code">
+                CU75112V1
+              </span>
+            </td>
+
+            <td>Portfolio</td>
+
+            <td>5</td>
+
+            <td>-</td>
+
+            <td>Not completed</td>
+
+          </tr>
+
+        </tbody>
+
+
+        <tfoot>
+
+          <tr class="total-row">
+
+            <td colspan="3">
+              Total First-Year Credits
+            </td>
+
+            <td>
+              60 EC
+            </td>
+
+            <td colspan="2">
+              0 EC completed
+            </td>
+
+          </tr>
+
+        </tfoot>
+
+      </table>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>
+      My ICT Portfolio - HZ University of Applied Sciences
+    </p>
+  </footer>
+
+</body>
+
 </html>

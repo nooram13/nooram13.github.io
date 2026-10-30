@@ -95,6 +95,13 @@ main a {
   text-decoration: none;
 }
 
+.small-label {
+  color: rgb(185, 90, 135);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
 /* =========================================
    GENERAL TABLE
    ========================================= */
@@ -135,7 +142,7 @@ footer {
 }
 
 /* =========================================
-   HOME PAGE
+   HOME
    ========================================= */
 
 .home-intro {
@@ -177,6 +184,7 @@ footer {
   border: 1px solid rgb(220, 200, 205);
   border-radius: 8px;
   transform: rotate(3deg);
+  box-sizing: border-box;
 }
 
 .intro-photo p {
@@ -196,7 +204,6 @@ footer {
 
 .home-button:hover {
   background-color: rgb(92, 45, 70);
-  color: white;
 }
 
 /* =========================================
@@ -232,6 +239,7 @@ footer {
   border-top: 5px solid rgb(190, 105, 145);
   border-radius: 4px 4px 16px 16px;
   color: rgb(95, 40, 68);
+  box-sizing: border-box;
 }
 
 .portfolio-item strong {
@@ -249,10 +257,6 @@ footer {
 .portfolio-item:hover {
   background-color: rgb(250, 224, 235);
   border-top-color: rgb(92, 45, 70);
-}
-
-.portfolio-item:hover span {
-  color: rgb(92, 45, 70);
 }
 
 /* =========================================
@@ -290,7 +294,7 @@ footer {
 }
 
 /* =========================================
-   PROFILE PAGE
+   ABOUT
    ========================================= */
 
 .profile-top {
@@ -300,8 +304,6 @@ footer {
   border-radius: 5px 25px 5px 25px;
   margin-bottom: 45px;
 }
-
-/* ABOUT ME */
 
 .about-me {
   width: 55%;
@@ -326,8 +328,6 @@ footer {
   font-size: 18px;
   font-weight: bold;
 }
-
-/* PROFILE PHOTO */
 
 .photo-area {
   width: 34%;
@@ -355,8 +355,6 @@ footer {
   margin-bottom: 5px;
 }
 
-/* GITHUB */
-
 .github-button {
   display: inline-block;
   background-color: rgb(150, 70, 108);
@@ -368,11 +366,10 @@ footer {
 
 .github-button:hover {
   background-color: rgb(92, 45, 70);
-  color: white;
 }
 
 /* =========================================
-   PROFILE - THEATRE
+   THEATRE
    ========================================= */
 
 .theatre-section {
@@ -406,37 +403,19 @@ footer {
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-bottom: 5px;
 }
 
 .theatre-text h2 {
   color: rgb(95, 40, 68);
   font-size: 30px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-}
-
-.theatre-text h3 {
-  color: rgb(105, 45, 75);
-  font-size: 17px;
-  margin-bottom: 5px;
-}
-
-.theatre-text p {
-  line-height: 1.7;
 }
 
 .theatre-details {
   padding-left: 20px;
-  margin-top: 5px;
-}
-
-.theatre-details li {
-  margin-bottom: 4px;
 }
 
 /* =========================================
-   PROFILE - BAKING
+   BAKING
    ========================================= */
 
 .baking-section {
@@ -459,18 +438,11 @@ footer {
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-bottom: 5px;
 }
 
 .baking-text h2 {
   color: rgb(95, 40, 68);
   font-size: 30px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-}
-
-.baking-text p {
-  line-height: 1.7;
 }
 
 .baking-note {
@@ -504,7 +476,6 @@ footer {
 .baking-photo p {
   color: rgb(135, 90, 110);
   font-size: 13px;
-  margin-bottom: 4px;
 }
 
 /* =========================================
@@ -515,6 +486,7 @@ footer {
   background-color: rgb(255, 246, 250);
   padding: 30px;
   border-radius: 5px 20px 5px 20px;
+  border-left: 6px solid rgb(185, 95, 135);
 }
 
 .useful-links h2 {
@@ -536,17 +508,8 @@ footer {
   color: white;
 }
 
-.external-menu {
-  border-left: 6px solid rgb(185, 95, 135);
-}
-
-.external-menu h2::after {
-  content: " ↗";
-  font-size: 16px;
-}
-
 /* =========================================
-   WHY IT PAGE
+   WHY IT
    ========================================= */
 
 .why-intro {
@@ -560,7 +523,6 @@ footer {
 .why-intro h2 {
   color: rgb(95, 40, 68);
   font-size: 32px;
-  margin-top: 5px;
 }
 
 .why-small {
@@ -570,23 +532,39 @@ footer {
   letter-spacing: 2px;
 }
 
+.why-cards {
+  margin-bottom: 30px;
+}
+
 .why-box {
-  width: 42%;
+  width: 46%;
   display: inline-block;
   vertical-align: top;
   background-color: white;
   padding: 25px;
-  margin-right: 3%;
+  margin: 1%;
   border-top: 5px solid rgb(190, 105, 145);
   border-radius: 5px 5px 18px 18px;
-}
-
-.why-box h2 {
-  color: rgb(105, 45, 75);
+  box-sizing: border-box;
 }
 
 .second-box {
   background-color: rgb(250, 230, 239);
+}
+
+.why-hz {
+  background-color: white;
+  padding: 30px;
+  margin-top: 40px;
+  border-left: 7px solid rgb(190, 105, 145);
+  border-radius: 5px 20px 5px 20px;
+}
+
+.long-term-section {
+  background-color: rgb(250, 230, 239);
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 20px 5px 20px 5px;
 }
 
 .why-goal {
@@ -595,10 +573,6 @@ footer {
   margin-top: 40px;
   border-radius: 20px 5px 20px 5px;
   text-align: center;
-}
-
-.why-goal h2 {
-  color: rgb(95, 40, 68);
 }
 
 .why-button {
@@ -612,11 +586,10 @@ footer {
 
 .why-button:hover {
   background-color: rgb(92, 45, 70);
-  color: white;
 }
 
 /* =========================================
-   BLOG PAGE
+   BLOG
    ========================================= */
 
 .personal-blog-intro {
@@ -625,12 +598,6 @@ footer {
   margin-bottom: 45px;
   border-left: 8px solid rgb(165, 75, 120);
   border-radius: 5px 25px 5px 25px;
-}
-
-.personal-blog-intro h2 {
-  color: rgb(95, 40, 68);
-  font-size: 32px;
-  margin-top: 5px;
 }
 
 .blog-note {
@@ -662,11 +629,6 @@ footer {
   background-color: rgb(255, 246, 250);
 }
 
-.personal-post h2 {
-  color: rgb(100, 45, 72);
-  margin-top: 5px;
-}
-
 .soft-post {
   background-color: rgb(250, 230, 239);
 }
@@ -683,13 +645,6 @@ footer {
   letter-spacing: 1px;
 }
 
-.post-date {
-  display: block;
-  color: rgb(135, 105, 118);
-  font-size: 12px;
-  margin-top: 6px;
-}
-
 .blog-button {
   display: inline-block;
   background-color: rgb(150, 70, 108);
@@ -701,7 +656,6 @@ footer {
 
 .blog-button:hover {
   background-color: rgb(92, 45, 70);
-  color: white;
 }
 
 .blog-ending {
@@ -714,12 +668,8 @@ footer {
   border-bottom: 3px solid rgb(190, 105, 145);
 }
 
-.blog-ending h2 {
-  color: rgb(95, 40, 68);
-}
-
 /* =========================================
-   GOALS PAGE
+   GOALS / SWOT
    ========================================= */
 
 .goals-intro {
@@ -730,37 +680,23 @@ footer {
   margin-bottom: 40px;
 }
 
-.goals-intro h2 {
-  color: rgb(95, 40, 68);
-  font-size: 32px;
-}
-
 .swot-section {
   margin-bottom: 45px;
 }
 
 .swot-section h2 {
-  color: rgb(95, 40, 68);
   text-align: center;
-  margin-bottom: 25px;
 }
 
 .swot-box {
-  width: 42%;
+  width: 46%;
   display: inline-block;
   vertical-align: top;
   background-color: white;
-  margin: 10px;
+  margin: 1%;
   padding: 22px;
   border-radius: 12px;
-}
-
-.swot-box h3 {
-  margin-top: 0;
-}
-
-.swot-box li {
-  margin: 8px 0;
+  box-sizing: border-box;
 }
 
 .strength {
@@ -782,6 +718,42 @@ footer {
   border-top: 5px solid rgb(95, 40, 68);
 }
 
+/* =========================================
+   STUDY SUCCESS
+   ========================================= */
+
+.study-success-section {
+  background-color: rgb(255, 244, 248);
+  padding: 30px;
+  margin: 40px 0;
+  border-left: 7px solid rgb(180, 100, 135);
+  border-radius: 5px 20px 5px 20px;
+}
+
+.study-success-section > h2,
+.study-success-section > p {
+  text-align: center;
+}
+
+.success-box {
+  background-color: white;
+  padding: 22px;
+  margin: 18px 0;
+  border-left: 5px solid rgb(190, 105, 145);
+  border-radius: 5px 15px 5px 15px;
+}
+
+.success-box:hover {
+  background-color: rgb(255, 249, 251);
+}
+
+.goals-connection {
+  background-color: rgb(250, 230, 239);
+  padding: 30px;
+  margin: 35px 0;
+  border-radius: 20px 5px 20px 5px;
+}
+
 .future-goal {
   background-color: rgb(250, 230, 239);
   padding: 30px;
@@ -790,7 +762,7 @@ footer {
 }
 
 /* =========================================
-   DIRECTION PAGE
+   DIRECTION
    ========================================= */
 
 .direction-intro {
@@ -799,11 +771,6 @@ footer {
   border-left: 8px solid rgb(180, 100, 135);
   border-radius: 5px 25px 5px 25px;
   margin-bottom: 35px;
-}
-
-.direction-intro h2 {
-  color: rgb(95, 40, 68);
-  font-size: 32px;
 }
 
 .direction-card {
@@ -815,10 +782,6 @@ footer {
   border-radius: 5px 18px 5px 18px;
 }
 
-.direction-card h2 {
-  color: rgb(105, 45, 75);
-}
-
 .direction-card:hover {
   background-color: rgb(255, 246, 250);
 }
@@ -826,10 +789,6 @@ footer {
 .pink-direction {
   background-color: rgb(250, 230, 239);
   border-left-color: rgb(110, 45, 75);
-}
-
-.direction-card li {
-  margin: 9px 0;
 }
 
 .direction-end {
@@ -840,12 +799,8 @@ footer {
   border-radius: 20px 5px 20px 5px;
 }
 
-.direction-end h2 {
-  color: rgb(95, 40, 68);
-}
-
 /* =========================================
-   PROGRAMMING EXPERIENCE
+   PROGRAMMING
    ========================================= */
 
 .programming-intro {
@@ -856,22 +811,13 @@ footer {
   margin-bottom: 40px;
 }
 
-.programming-intro h2 {
-  color: rgb(95, 40, 68);
-  font-size: 32px;
-}
-
 .learning-section {
   margin-bottom: 45px;
-}
-
-.learning-section h2 {
-  color: rgb(95, 40, 68);
   text-align: center;
 }
 
 .learning-box {
-  width: 26%;
+  width: 29%;
   display: inline-block;
   vertical-align: top;
   background-color: white;
@@ -879,10 +825,8 @@ footer {
   margin: 8px;
   border-top: 5px solid rgb(190, 105, 145);
   border-radius: 5px 5px 15px 15px;
-}
-
-.learning-box h3 {
-  color: rgb(105, 45, 75);
+  box-sizing: border-box;
+  text-align: left;
 }
 
 .learning-box:hover {
@@ -896,10 +840,6 @@ footer {
   margin-bottom: 40px;
 }
 
-.challenge-section h2 {
-  color: rgb(95, 40, 68);
-}
-
 .programming-goal {
   background-color: white;
   padding: 30px;
@@ -908,12 +848,8 @@ footer {
   border-radius: 5px 5px 18px 18px;
 }
 
-.programming-goal h2 {
-  color: rgb(95, 40, 68);
-}
-
 /* =========================================
-   ICT FIELD PAGE
+   ICT FIELD
    ========================================= */
 
 .field-intro {
@@ -924,23 +860,13 @@ footer {
   margin-bottom: 40px;
 }
 
-.field-intro h2 {
-  color: rgb(95, 40, 68);
-  font-size: 32px;
-}
-
 .field-section {
   margin-bottom: 45px;
-}
-
-.field-section h2 {
-  color: rgb(95, 40, 68);
   text-align: center;
-  margin-bottom: 25px;
 }
 
 .field-box {
-  width: 42%;
+  width: 46%;
   display: inline-block;
   vertical-align: top;
   background-color: white;
@@ -948,10 +874,8 @@ footer {
   margin: 10px;
   border-top: 5px solid rgb(190, 105, 145);
   border-radius: 5px 5px 15px 15px;
-}
-
-.field-box h3 {
-  color: rgb(105, 45, 75);
+  box-sizing: border-box;
+  text-align: left;
 }
 
 .field-box:hover {
@@ -966,12 +890,8 @@ footer {
   margin-bottom: 40px;
 }
 
-.cyber-interest h2 {
-  color: rgb(95, 40, 68);
-}
-
 /* =========================================
-   BACK BUTTON
+   BUTTON
    ========================================= */
 
 .back-button {
@@ -985,11 +905,10 @@ footer {
 
 .back-button:hover {
   background-color: rgb(92, 45, 70);
-  color: white;
 }
 
 /* =========================================
-   DASHBOARD PAGE
+   DASHBOARD
    ========================================= */
 
 .dashboard-intro {
@@ -1000,24 +919,12 @@ footer {
   border-radius: 5px 25px 5px 25px;
 }
 
-.dashboard-intro h2 {
-  color: rgb(95, 40, 68);
-  font-size: 32px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
 .dashboard-small {
   color: rgb(185, 90, 135);
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-bottom: 5px;
 }
-
-/* =========================================
-   STUDY PROGRESS
-   ========================================= */
 
 .study-progress {
   width: 80%;
@@ -1034,18 +941,6 @@ footer {
   margin-bottom: 25px;
 }
 
-.progress-title h2 {
-  color: rgb(95, 40, 68);
-  margin: 0 0 6px 0;
-  font-size: 28px;
-}
-
-.progress-title p {
-  color: rgb(150, 80, 110);
-  margin: 0;
-  font-size: 14px;
-}
-
 .progress-bar {
   width: 100%;
   height: 24px;
@@ -1059,7 +954,6 @@ footer {
   width: 0%;
   height: 100%;
   background-color: rgb(180, 100, 135);
-  border-radius: 15px;
 }
 
 .boundary-line {
@@ -1084,27 +978,12 @@ footer {
   font-weight: bold;
 }
 
-/* =========================================
-   DASHBOARD STATUS
-   ========================================= */
-
 .dashboard-status {
   background-color: rgb(250, 230, 239);
   padding: 25px;
   margin-bottom: 40px;
   text-align: center;
   border-radius: 20px 5px 20px 5px;
-}
-
-.dashboard-status h2 {
-  color: rgb(95, 40, 68);
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-.dashboard-status p {
-  color: rgb(120, 90, 105);
-  margin-top: 5px;
 }
 
 .status-list {
@@ -1135,10 +1014,6 @@ footer {
   color: rgb(150, 60, 75);
 }
 
-/* =========================================
-   DASHBOARD TABLE
-   ========================================= */
-
 .dashboard-table {
   background-color: white;
   padding: 30px;
@@ -1150,41 +1025,18 @@ footer {
 
 .dashboard-table h2 {
   text-align: center;
-  color: rgb(95, 40, 68);
-  margin-top: 0;
-  margin-bottom: 25px;
 }
 
 .dashboard-table table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: white;
   font-size: 14px;
 }
-
-.dashboard-table th,
-.dashboard-table td {
-  padding: 12px;
-  border: 1px solid rgb(225, 200, 210);
-  text-align: left;
-}
-
-.dashboard-table th {
-  background-color: rgb(95, 40, 68);
-  color: white;
-}
-
-/* BLOCK TITLE */
 
 .quarter-row td {
   background-color: rgb(232, 190, 210);
   color: rgb(85, 35, 60);
   font-weight: bold;
   text-align: center;
-  font-size: 15px;
 }
-
-/* COURSE CODE */
 
 .course-code {
   display: block;
@@ -1192,8 +1044,6 @@ footer {
   font-size: 11px;
   margin-top: 4px;
 }
-
-/* NOT COMPLETED */
 
 .not-completed td {
   background-color: rgb(255, 251, 252);
@@ -1203,33 +1053,18 @@ footer {
   background-color: rgb(250, 235, 242);
 }
 
-/* PASSED */
-
 .passed td {
   background-color: rgb(230, 245, 233);
 }
-
-.passed:hover td {
-  background-color: rgb(215, 238, 220);
-}
-
-/* INSUFFICIENT */
 
 .failed td {
   background-color: rgb(250, 228, 232);
 }
 
-.failed:hover td {
-  background-color: rgb(245, 215, 220);
-}
-
-/* TOTAL */
-
 .total-row td {
   background-color: rgb(95, 40, 68);
   color: white;
   font-weight: bold;
-  padding: 14px;
 }
 
 /* =========================================
@@ -1245,8 +1080,6 @@ footer {
     padding: 8px 12px;
   }
 
-  /* HOME */
-
   .intro-text {
     width: 100%;
   }
@@ -1257,11 +1090,9 @@ footer {
   }
 
   .portfolio-item {
-    width: 85%;
+    width: 90%;
     margin: 8px 0;
   }
-
-  /* PROFILE */
 
   .about-me {
     width: 100%;
@@ -1287,74 +1118,36 @@ footer {
     width: 100%;
   }
 
-  .baking-text {
-    margin-right: 0;
-  }
-
   .baking-photo {
     margin-top: 25px;
   }
 
-  /* WHY IT */
-
   .why-box {
-    width: 90%;
-    margin-bottom: 20px;
+    width: 96%;
   }
 
-  /* BLOG */
+  .swot-box {
+    width: 96%;
+  }
+
+  .direction-card {
+    width: 95%;
+  }
+
+  .learning-box {
+    width: 90%;
+  }
+
+  .field-box {
+    width: 95%;
+  }
 
   .personal-post {
     width: 90%;
-    margin: 20px auto;
   }
 
   .blog-ending {
-    width: 85%;
-  }
-
-  /* GOALS */
-
-  .swot-box {
     width: 90%;
-  }
-
-  /* DIRECTION */
-
-  .direction-card {
-    width: 90%;
-  }
-
-  /* PROGRAMMING */
-
-  .learning-box {
-    width: 85%;
-  }
-
-  /* ICT FIELD */
-
-  .field-box {
-    width: 90%;
-  }
-
-  /* INTRO BOXES */
-
-  .home-intro,
-  .profile-top,
-  .why-intro,
-  .personal-blog-intro,
-  .goals-intro,
-  .direction-intro,
-  .programming-intro,
-  .field-intro,
-  .dashboard-intro {
-    padding: 25px;
-  }
-
-  /* DASHBOARD */
-
-  .dashboard-intro h2 {
-    font-size: 27px;
   }
 
   .study-progress {
@@ -1362,16 +1155,8 @@ footer {
     padding: 22px;
   }
 
-  .progress-title h2 {
-    font-size: 23px;
-  }
-
   .progress-info {
     font-size: 10px;
-  }
-
-  .dashboard-status {
-    padding: 20px;
   }
 
   .status-item {
